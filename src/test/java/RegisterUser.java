@@ -1,8 +1,7 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
-//import io.qameta.allure.junit4.DisplayName;
+import io.qameta.allure.junit4.DisplayName;
 import objects.NotePad;
 import org.junit.After;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -40,6 +39,7 @@ public class RegisterUser {
      * @DisplayName("GL-75.77 The buttons “Settings”, “Logout” is presented in Header for registered user")
      */
     @Test
+    @DisplayName("GL-75.77 The buttons “Settings”, “Logout” is presented in Header for registered user")
 
     public void RegisterUser(){
         np.open()
@@ -49,12 +49,6 @@ public class RegisterUser {
                 .ButtonCreateAccount()
                 .buttonLogout()
                 .buttonSettings();
-        //np.registerLoginClick();
-        //np.enterEmailForLogin(email);
-        //np.fieldPassword(password);
-        //np.ButtonCreateAccount();
-        //np.buttonLogout();
-        //np.buttonSettings();
 
 
     }

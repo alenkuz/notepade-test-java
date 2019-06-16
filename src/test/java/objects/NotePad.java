@@ -1,6 +1,7 @@
 package objects;
 
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -26,7 +27,7 @@ public class NotePad {
         this.wait = new WebDriverWait(this.driver, 15);
     }
 
-    //@Step
+    @Step
     public NotePad open ()
     {
 
@@ -34,14 +35,14 @@ public class NotePad {
         return this;
     }
 
-    //@Step
+    @Step
     public NotePad close ()
     {
         driver.quit();
         return this;
     }
 
-    //@Step
+    @Step
     public NotePad registerLoginClick ()
     {
         wait.until(ExpectedConditions.presenceOfElementLocated(buttonRegisterLogin));
@@ -49,7 +50,7 @@ public class NotePad {
         return this;
     }
 
-    //@Step
+    @Step
     public NotePad enterEmailForLogin (String email)
     {
         wait.until(ExpectedConditions.presenceOfElementLocated(fieldRegisterEmail));
@@ -58,7 +59,7 @@ public class NotePad {
         return this;
     }
 
-    //@Step
+    @Step
     public NotePad fieldPassword (String password)
     {
         wait.until(ExpectedConditions.presenceOfElementLocated(fieldPassword));
@@ -67,7 +68,7 @@ public class NotePad {
 
     }
 
-    //@Step
+    @Step
     public NotePad ButtonCreateAccount ()
     {
         wait.until(ExpectedConditions.presenceOfElementLocated(buttonCreateAccount));
@@ -75,7 +76,7 @@ public class NotePad {
         return this;
     }
 
-    //@Step
+    @Step
     public NotePad buttonSettings ()
     {
         wait.until(ExpectedConditions.presenceOfElementLocated(buttonSettings));
@@ -83,7 +84,7 @@ public class NotePad {
         return this;
     }
 
-    //@Step
+    @Step
     public NotePad buttonLogout () {
         wait.until(ExpectedConditions.presenceOfElementLocated(buttonLogout));
 
