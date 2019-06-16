@@ -42,5 +42,7 @@ repositories {
         compile("io.github.bonigarcia:webdrivermanager:3.6.1")
         // https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12
         testCompile group: 'org.slf4j', name: 'slf4j-log4j12', version: '2.0.0-alpha0'
+        // https://mvnrepository.com/artifact/javax.xml/jaxb-api
+        compile group: 'javax.xml', name: 'jaxb-api', version: '2.1'
 
     }
